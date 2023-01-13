@@ -8,7 +8,7 @@ const deleteDatasRouter = require('./routes/deleteDatas.route');
 const data = require('./data.json')
 const express = require('express');
 const app = express();
-const port = 5001;
+const PORT = 5000;
 
 // middleware
 const cors = require('cors');
@@ -28,7 +28,7 @@ app.use('/user/random', randomDataRouters)
 
 
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log('server is running')
 });
 
